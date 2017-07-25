@@ -25,13 +25,24 @@
           </div>
 
           <ul>
-            <li><a href="http://www....">Home</a></li>
+            <li><%= link_to 'Home', '/' %></a></li>
             <li><a href="http://www..../faq">Questions</a></li>
             <li><a href="http://www..../news">News</a></li>
             <li><a href="http://www..../contact">Contact</a></li>
+          </ul>
+          <ul>
             <li><%= Time.now %></li>
             <li><%= pluralize session[:counter], 'time' unless session[:counter] <= 5 %></li>
           </ul>
+
+          <% if session[:user_id] %>
+          <ul>
+            <li><%= link_to 'Orders', orders_path %></li>
+            <li><%= link_to 'Products', products_path %></li>
+            <li><%= link_to 'Users', users_path %></li>
+          </ul>
+          <%= button_to 'Logout', logout_path, method: :delete %>
+          <% end %>
         </div>
         <div id="main">
     <%= yield %>
