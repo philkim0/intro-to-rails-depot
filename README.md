@@ -1,24 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an application through the instructions by Agile Web Development with Rails 5.
 
-Things you may want to cover:
+You can find this application on heroku [here](https://fathomless-meadow-31024.herokuapp.com/)
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+July 26, 2017, Phil Kim
